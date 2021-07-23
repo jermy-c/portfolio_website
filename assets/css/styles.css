@@ -10,17 +10,29 @@
     font-family: 'Poppins', sans-serif;;
 }
 
+/* NAVIGATION */
 nav{
     height: 100vh;
-    width: 12vw;
+    width: 5rem;
     background-color: var(--primary-color);
     position: fixed;
+    transition: .2s;
+}
+
+.nav__logo{
+    position: relative;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin: 1rem auto;
+}
+
+nav:hover{
+    width: 16rem;
 }
 .nav__button{
     width: 8vw;
     padding: 10px;
     margin-left: -10px;
-    background-color: blue;
     display: flex;
 }
 
@@ -34,7 +46,10 @@ nav{
     color: var(--secondary-color);
     text-transform: uppercase;
     margin: 5px;
+    display: block;
 }
+
+/* ICONS */
 
 .home__square{
     height: 20px;
@@ -45,6 +60,61 @@ nav{
     background-color: transparent;
 }
 
-.home__roof{
-    
+
+main{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* HOME */
+
+.home{
+    display: inline-flex;
+    align-items: center;
+    height: 50rem;
+}
+
+.profile__pic{
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.home__intro{
+    padding: 2rem;
+    margin: auto;
+}
+
+.home__greeting{
+    text-transform: uppercase;
+    display: block;
+}
+
+.home__name{
+    display: block;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.home__brief{
+    display: block;
+}
+
+.home__brief__role{
+    display: inline-flex;
+    color: var(--primary-color);
+}
+
+.home__links{
+    display: block;
+}
+
+.home__resume{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.home__link{
+    text-decoration: none;
 }
