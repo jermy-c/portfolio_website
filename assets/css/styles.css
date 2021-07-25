@@ -1,65 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://css.gg/all.css');
 
 :root{
     --primary-color: #92D293;
     --secondary-color: white;
+    --bg-color: #f8f8f8;
 }
 
-*,::before,::after{
+body{
     margin: 0;
-    font-family: 'Poppins', sans-serif;;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
 }
 
 /* NAVIGATION */
-nav{
-    height: 100vh;
+.nav__bar{
     width: 5rem;
-    background-color: var(--primary-color);
+    height: 100vh;
     position: fixed;
-    transition: .2s;
+    background-color: var(--primary-color);
+    transition: .3s ease;
+}
+
+.nav__bar:hover{
+    width: 16rem;
 }
 
 .nav__logo{
-    position: relative;
-    font-size: 3rem;
-    color: var(--secondary-color);
-    margin: 1rem auto;
-}
 
-nav:hover{
-    width: 16rem;
-}
-.nav__button{
-    width: 8vw;
-    padding: 10px;
-    margin-left: -10px;
-    display: flex;
 }
 
 .nav__list{
-    margin-top: 40vh;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__item{
+    width: 100%;
+    padding: 1rem;
+}
+.nav__text{
+    display: none;
 }
 
 .nav__link{
-    text-decoration: none;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav:hover .nav__text{
     display: block;
 }
 
+nav:last-child{
+    margin-top: auto;
+}
 /* ICONS */
 
-.home__square{
-    height: 20px;
-    width: 20px;
-    border-radius: 5px;
-    display: inline-block;
-    border: var(--secondary-color) solid 1px;
-    background-color: transparent;
+.gg-home, .gg-user, .gg-screen{
+    color: var(--secondary-color);
+    border-radius: 2px;
 }
-
 
 main{
     position: relative;
@@ -117,4 +124,15 @@ main{
 
 .home__link{
     text-decoration: none;
+}
+
+.about{
+    display: block;
+    height: 50rem;
+}
+
+.info__container{
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
 }
